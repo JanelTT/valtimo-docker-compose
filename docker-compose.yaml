@@ -74,6 +74,7 @@ services:
       volumes:
           - ./imports/valtimo-rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf:ro
           - ./imports/valtimo-rabbitmq/definitions.json:/etc/rabbitmq/definitions.json:ro
+          - valtimo-rabbitmq:/var/lib/rabbitmq
       ports:
           - "5672:5672"
           - "15672:15672"
@@ -118,4 +119,4 @@ services:
 volumes:
   valtimo-database-data:
   valtimo-database-data-mysql:
-
+  valtimo-rabbitmq:
