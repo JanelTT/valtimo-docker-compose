@@ -118,3 +118,4 @@ services:
 volumes:
   valtimo-database-data:
   valtimo-database-data-mysql:
+
